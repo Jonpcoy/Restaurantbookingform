@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <section id="header">
+        <img src="logo.png" alt="logo" id="logo" title="logo" />
+        <h1 id="title">Frankie's</h1>
+          <p id="description">To book a table please fill out the form below.</p>
+        </section>
+        <section id="main">
+          <form id="survey-form">
+          <fieldset>
+            <h3>Contact info</h3>
+            <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="name"/></label>
+            <label id="email-label"for="email">Email: <input id="email" type="email" required placeholder="email@gmail.com"/></label>
+          </fieldset>
+          <fieldset>
+            <h3>Options</h3>
+            <h4>Guests</h4>
+            <label id="number-label" for="number">Number: <input id="number" type="number" pattern="[0-5] " min="0" max="10" placeholder="0-10"/></label>
+            <h4>Location</h4>
+            <select id="dropdown">
+              <option type="radio" name="please select" value="0">Please select</option>
+              <option value="1">Balcony</option>
+              <option value="2">Bar</option>
+              <option value="3">Dining Room</option>
+              </select>
+              <h4>Dietary requirements</h4>
+              <label for="vegetarian"><input value="1" id="vegetarian" type="radio" name="dietaryrequirements" class="inline" /> Vegetarian</label>
+              <label for="vegan"><input value="2" id="vegan" type="radio" name="dietaryrequirements" class="inline" /> Vegan</label>
+              <label for="glutenfree"><input value="2" id="glutenfree" type="radio" name="dietaryrequirements" class="inline" /> Gluten free</label>
+              <p>Please let us know about any additional requirements.</p>
+              <label for="moreinfo">More information: <textarea id="moreinfo" ame="moreinfo" rows="3" cols="30" placeholder="more information ..." /></textarea></label>
+
+          </fieldset>
+          <fieldset>
+            <h3>Declaration</h3>
+            <p>Please read the restaurant's terms and conditions.</p>
+            <label for="terms-and-coditions">
+              <input id="terms-and-coditions" type="checkbox" value="terms-and-conditions" /> I agree to the terms and conditions.</label>
+              <label for="marketing">
+              <input id="marketing" type="checkbox" value="marketing" /> I would like to hear about future dinning events.</label>
+              <input id="submit" type="submit" value="submit"/>
+          </fieldset>
+            </form>
+          </section>
+      </body>
+  </html>

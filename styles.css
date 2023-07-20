@@ -1,0 +1,57 @@
+body {
+    font-family:Sans-Serif;
+    Color: black;
+}
+
+#header {
+ display: grid;
+}
+
+#logo {
+    border-radius: 10px;
+    background-color: orangered;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#title, #description {
+    margin: 0 auto;
+}
+
+#title {
+    background-color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: orangered;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#description {
+
+}
+
+#survey-form {
+    display: grid;
+    background-color: white;
+}
+
+label {
+    display:block;
+}
+
+input[type="submit"] {
+    display:block;
+    margin: 1em auto;
+}
+
+fieldset {
+    border:none;
+    padding:1rem 0;
+    border-bottom: 3px solid grey;
+}
+
+fieldset:last-of-type {
+    border-bottom:none;
+}
